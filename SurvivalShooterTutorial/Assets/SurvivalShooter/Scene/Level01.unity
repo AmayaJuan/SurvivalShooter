@@ -2076,6 +2076,18 @@ Prefab:
       propertyPath: enemyHealthSlider
       value: 
       objectReference: {fileID: 185855127}
+    - target: {fileID: 82861028602985140, guid: 6e69cfafa35545c4787b83bb39f30a46,
+        type: 2}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 243388443194653486, guid: 9edd94fdc38239e4496104472ff948d7,
+        type: 2}
+    - target: {fileID: 82897842980794342, guid: 6e69cfafa35545c4787b83bb39f30a46,
+        type: 2}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 243633450019022492, guid: 9edd94fdc38239e4496104472ff948d7,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6e69cfafa35545c4787b83bb39f30a46, type: 2}
   m_IsPrefabParent: 0
@@ -3329,7 +3341,8 @@ AudioSource:
   m_GameObject: {fileID: 1917196276}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 243622721464420774, guid: 9e6344ae84bbbd240af204613c1ec8a8,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 4fff99673a41e24439d527ad0bd6b569, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.1
