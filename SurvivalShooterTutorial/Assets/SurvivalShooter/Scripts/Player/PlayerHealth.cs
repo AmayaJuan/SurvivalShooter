@@ -61,9 +61,14 @@ public class PlayerHealth : MonoBehaviour
         playerShooting.enabled = false;
     }
 
-
-    public void RestartLevel ()
+    public void ScheduleRestartLevel()
     {
+        StartCoroutine(RestartLevel());
+    }
+
+    IEnumerator RestartLevel ()
+    {
+        yield return new WaitForSeconds(4f);
         SceneManager.LoadScene(0);
     }
 }
