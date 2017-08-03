@@ -24,13 +24,11 @@ public class EnemyHealth : MonoBehaviour
         currentHealth = startingHealth;
     }
 
-
     void Update ()
     {
         if(isSinking)
             transform.Translate (-Vector3.up * sinkSpeed * Time.deltaTime);
     }
-
 
     public void TakeDamage (int amount, Vector3 hitPoint)
     {
@@ -44,7 +42,6 @@ public class EnemyHealth : MonoBehaviour
             Death();
     }
 
-
     void Death ()
     {
         isDead = true;
@@ -53,7 +50,6 @@ public class EnemyHealth : MonoBehaviour
         enemyAudio.clip = deathClip;
         enemyAudio.Play ();
     }
-
 
     public void StartSinking ()
     {
