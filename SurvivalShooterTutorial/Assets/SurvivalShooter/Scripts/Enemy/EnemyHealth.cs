@@ -2,6 +2,7 @@
 
 public class EnemyHealth : MonoBehaviour
 {
+    public Sprite icon;
     public int startingHealth = 100;
     public int currentHealth;
     public float sinkSpeed = 2.5f;
@@ -22,6 +23,11 @@ public class EnemyHealth : MonoBehaviour
         hitParticles = GetComponentInChildren <ParticleSystem> ();
         capsuleCollider = GetComponent <CapsuleCollider> ();
         currentHealth = startingHealth;
+    }
+
+    public int GetHealthPercentage()
+    {
+        return 100 * currentHealth / startingHealth;
     }
 
     void Update ()
