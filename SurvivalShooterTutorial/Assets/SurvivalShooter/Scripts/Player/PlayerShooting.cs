@@ -8,6 +8,7 @@ public class PlayerShooting : MonoBehaviour
     public Slider enemyHealthSlider;
     public Image enemyImage;
     public Slider ammoSlider;
+    public Light pointLight;
     public int damagePerShot = 20;
     public int maxBullets = 100;
     public float timeBetweenBullets = 0.15f;
@@ -77,6 +78,7 @@ public class PlayerShooting : MonoBehaviour
     {
         gunLine.enabled = false;
         gunLight.enabled = false;
+        pointLight.enabled = false;
     }
 
     void Shoot ()
@@ -89,6 +91,7 @@ public class PlayerShooting : MonoBehaviour
         timer = 0f;
         gunAudio.Play();
         gunLight.enabled = true;
+        pointLight.enabled = true;
         gunParticles.Stop();
         gunParticles.Play();
         gunLine.enabled = true;
